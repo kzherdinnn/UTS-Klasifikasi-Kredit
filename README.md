@@ -1,7 +1,7 @@
 ## 📘 Tahapan Pembuatan Model Klasifikasi (Decision Tree)
 
 ### 🔍 Deskripsi Masalah
-Tujuan dari proyek ini adalah membuat model klasifikasi untuk menentukan apakah seseorang **layak mendapatkan kredit komputer** atau tidak, berdasarkan atribut-atribut seperti umur, penghasilan, status mahasiswa, dan rating kredit. Model yang digunakan adalah **Decision Tree**, karena NIM saya bernomor ganjil.
+Tujuan dari proyek ini adalah membuat model klasifikasi untuk menentukan apakah seseorang **layak mendapatkan kredit komputer** atau tidak, berdasarkan atribut-atribut seperti umur, penghasilan, status mahasiswa, dan rating kredit. Model yang digunakan adalah **Decision Tree**.
 
 ---
 
@@ -53,12 +53,7 @@ Model Decision Tree digunakan untuk melakukan klasifikasi apakah seseorang **lay
 - **Data Uji (Testing)**: 20% (201 data)
 
 ### 🌟 Akurasi Model
-Model menghasilkan akurasi sebesar **XX.XX%**, yang berarti model mampu mengklasifikasikan data uji dengan tingkat ketepatan sebesar itu.
-
-> Contoh (ubah sesuai hasil asli):
-```
-Akurasi: 87.56%
-```
+Model menghasilkan akurasi sebesar **80.50%**, yang berarti model mampu mengklasifikasikan data uji dengan tingkat ketepatan sebesar itu.
 
 ### 📊 Confusion Matrix
 Confusion Matrix menunjukkan jumlah prediksi benar dan salah dalam bentuk matriks:
@@ -81,14 +76,22 @@ Classification report memberikan nilai:
 
 Contoh (ubah dengan hasil asli):
 ```
-              precision    recall  f1-score   support
+=== Evaluasi Model Decision Tree ===
+Akurasi: 80.50%
 
-       Tidak       0.88      0.85      0.86       103
-          Ya       0.87      0.90      0.88        98
+Confusion Matrix:
+ [[ 57  14]
+ [ 25 104]]
 
-    accuracy                           0.88       201
-   macro avg       0.88      0.88      0.88       201
-weighted avg       0.88      0.88      0.88       201
+Classification Report:
+               precision    recall  f1-score   support
+
+       Tidak       0.70      0.80      0.75        71
+          Ya       0.88      0.81      0.84       129
+
+    accuracy                           0.81       200
+   macro avg       0.79      0.80      0.79       200
+weighted avg       0.82      0.81      0.81       200
 ```
 
 ---
@@ -97,15 +100,6 @@ weighted avg       0.88      0.88      0.88       201
 Visualisasi pohon keputusan memberikan gambaran bagaimana data diproses dan diputuskan oleh model. Setiap cabang mewakili kondisi logika (contoh: `Income <= 1.5`), dan setiap daun (akhir cabang) menyatakan keputusan akhir model (Ya/Tidak).
 
 Pohon ini membantu memahami **alur logika keputusan** model secara transparan dan dapat dijelaskan ke stakeholder non-teknis.
-
-Jika ingin menyisipkan visualisasi ke README, simpan gambar dengan:
-```python
-plt.savefig("decision_tree.png")
-```
-Lalu tambahkan ke markdown seperti ini:
-```markdown
-![Decision Tree](decision_tree.png)
-```
 
 ---
 

@@ -69,5 +69,3 @@ plot_tree(model,
           fontsize=10)
 plt.title("Decision Tree - Klasifikasi Kredit Komputer")
 plt.show()
-
-# %%
