@@ -100,7 +100,8 @@ weighted avg       0.82      0.81      0.81       200
 Visualisasi pohon keputusan memberikan gambaran bagaimana data diproses dan diputuskan oleh model. Setiap cabang mewakili kondisi logika (contoh: `Income <= 1.5`), dan setiap daun (akhir cabang) menyatakan keputusan akhir model (Ya/Tidak).
 
 Pohon ini membantu memahami **alur logika keputusan** model secara transparan dan dapat dijelaskan ke stakeholder non-teknis.
-![Uploading decision_tree.png…]()
+![decision_tree](https://github.com/user-attachments/assets/18a0b4fc-4c80-485a-84de-bf57cf77fd3a)
+
 
 ---
 
